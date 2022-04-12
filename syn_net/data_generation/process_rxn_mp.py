@@ -16,7 +16,7 @@ shutup.please()
 
 if __name__ == '__main__':
     name = 'pis'
-    path_to_rxn_templates = '/home/whgao/scGen/synth_net/data/rxn_set_' + name + '.txt'
+    path_to_rxn_templates = '/home/ec2-user/SynNet/data/rxn_set_hb.txt'
     rxn_templates = []
     for line in open(path_to_rxn_templates, 'rt'):
         rxn = Reaction(line.split('|')[1].strip())
@@ -29,4 +29,4 @@ if __name__ == '__main__':
     print('Time: ', time() - t, 's')
 
     r = ReactionSet(rxns)
-    r.save('/pool001/whgao/data/synth_net/st_pis/reactions_' + name + '.json.gz')
+    r.save('/home/ec2-user/SynNet/reactions_' + name + '.json.gz')
