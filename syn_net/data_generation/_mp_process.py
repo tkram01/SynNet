@@ -4,7 +4,7 @@ for a matching reaction template. Prepared for multiprocessing.
 """
 import pandas as pd
 
-path_to_building_blocks = '/home/whgao/scGen/synth_net/data/enamine_us.csv.gz'
+path_to_building_blocks = '/home/ec2-user/SynNet/enamine_us.csv.gz'
 building_blocks = pd.read_csv(path_to_building_blocks, compression='gzip')['SMILES'].tolist()
 print('Finish reading the building blocks list!')
 

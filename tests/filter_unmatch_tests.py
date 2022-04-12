@@ -9,7 +9,7 @@ from syn_net.utils.data_utils import *
 
 if __name__ == '__main__':
     r_path = './data/ref/rxns_hb.json.gz'
-    bb_path = '/home/whgao/scGen/synth_net/data/enamine_us.csv.gz'
+    bb_path = '/home/ec2-user/SynNet/enamine_us.csv.gz'
     r_set = ReactionSet()
     r_set.load(r_path)
     matched_mols = set()

@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 if __name__ == '__main__':
     r_path = '/pool001/whgao/data/synth_net/st_pis/reactions_pis.json.gz'
-    bb_path = '/home/whgao/scGen/synth_net/data/enamine_us.csv.gz'
+    bb_path = '/home/ec2-user/SynNet/enamine_us.csv.gz'
     r_set = ReactionSet()
     r_set.load(r_path)
     matched_mols = set()
