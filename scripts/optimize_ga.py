@@ -14,12 +14,12 @@ from tdc import Oracle
 
 # define the following oracle functions from the TDC
 logp  = Oracle(name = 'LogP')
-qed   = Oracle(name = 'QED')
-jnk   = Oracle(name = 'JNK3')
-gsk   = Oracle(name = 'GSK3B')
-drd2  = Oracle(name = 'DRD2')
-_7l11 = Oracle(name = '7l11_docking')
-_drd3 = Oracle(name = 'drd3_docking')
+# qed   = Oracle(name = 'QED')
+# jnk   = Oracle(name = 'JNK3')
+# gsk   = Oracle(name = 'GSK3B')
+# drd2  = Oracle(name = 'DRD2')
+# _7l11 = Oracle(name = '7l11_docking')
+# _drd3 = Oracle(name = 'drd3_docking')
 
 
 def dock_drd3(smi):
