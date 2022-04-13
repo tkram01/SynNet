@@ -30,7 +30,7 @@ path_to_reaction_file   = f'/home/ec2-user/SynNet/reactions_pis.json.gz'
 path_to_building_blocks = f'/home/ec2-user/SynNet/enamine_us_matched.csv.gz'
 
 # define paths to pretrained modules
-param_path  = f'/home/whgao/synth_net/synth_net/params/{param_dir}/'
+param_path  = f'/home/ec2-user/SynNet/params/{param_dir}/'
 path_to_act = f'{param_path}act.ckpt'
 path_to_rt1 = f'{param_path}rt1.ckpt'
 path_to_rxn = f'{param_path}rxn.ckpt'
