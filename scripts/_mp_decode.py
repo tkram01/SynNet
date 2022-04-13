@@ -26,7 +26,7 @@ mol_embedder.eval()
 bb_emb = np.load('/home/ec2-user/SynNet/enamine_us_emb_fp_4096.npy')
 
 # define path to the reaction templates and purchasable building blocks
-path_to_reaction_file   = f'/pool001/whgao/data/synth_net/st_{rxn_template}/reactions_{rxn_template}.json.gz'
+path_to_reaction_file   = f'/home/ec2-user/SynNet/reactions_pis.json.gz'
 path_to_building_blocks = f'/home/ec2-user/SynNet/enamine_us_matched.csv.gz'
 
 # define paths to pretrained modules
