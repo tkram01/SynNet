@@ -23,11 +23,11 @@ mol_embedder = load_pretrained(model_type).to(device)
 mol_embedder.eval()
 
 # load the purchasable building block embeddings
-bb_emb = np.load('/pool001/whgao/data/synth_net/st_hb/enamine_us_emb_fp_256.npy')
+bb_emb = np.load('/home/ec2-user/SynNet/enamine_us_emb_fp_4096.npy')
 
 # define path to the reaction templates and purchasable building blocks
 path_to_reaction_file   = f'/pool001/whgao/data/synth_net/st_{rxn_template}/reactions_{rxn_template}.json.gz'
-path_to_building_blocks = f'/pool001/whgao/data/synth_net/st_{rxn_template}/enamine_us_matched.csv.gz'
+path_to_building_blocks = f'/home/ec2-user/SynNet/enamine_us_matched.csv.gz'
 
 # define paths to pretrained modules
 param_path  = f'/home/whgao/synth_net/synth_net/params/{param_dir}/'
