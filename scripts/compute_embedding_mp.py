@@ -18,7 +18,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # define the path to which data will be saved
-    path = '/pool001/whgao/data/synth_net/st_hb/'
+    path = '/home/ec2-user/SynNet/data/'
 
     # load the building blocks
     data = pd.read_csv(path + 'enamine_us_matched.csv.gz', compression='gzip')['SMILES'].tolist()
