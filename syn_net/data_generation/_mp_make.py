@@ -11,8 +11,8 @@ from syn_net.data_generation.make_dataset import synthetic_tree_generator
 from syn_net.utils.data_utils import ReactionSet
 
 
-path_reaction_file = '/pool001/whgao/data/synth_net/st_pis/reactions_pis.json.gz'
-path_to_building_blocks = '/pool001/whgao/data/synth_net/st_pis/enamine_us_matched.csv.gz'
+path_reaction_file = '/home/ec2-user/SynNet/reactions_pis.json.gz'
+path_to_building_blocks = '/home/ec2-user/SynNet/enamine_us_matched.csv.gz'
 
 building_blocks = pd.read_csv(path_to_building_blocks, compression='gzip')['SMILES'].tolist()
 r_set = ReactionSet()

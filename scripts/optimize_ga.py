@@ -14,12 +14,12 @@ from tdc import Oracle
 
 # define the following oracle functions from the TDC
 logp  = Oracle(name = 'LogP')
-qed   = Oracle(name = 'QED')
-jnk   = Oracle(name = 'JNK3')
-gsk   = Oracle(name = 'GSK3B')
-drd2  = Oracle(name = 'DRD2')
-_7l11 = Oracle(name = '7l11_docking')
-_drd3 = Oracle(name = 'drd3_docking')
+# qed   = Oracle(name = 'QED')
+# jnk   = Oracle(name = 'JNK3')
+# gsk   = Oracle(name = 'GSK3B')
+# drd2  = Oracle(name = 'DRD2')
+# _7l11 = Oracle(name = '7l11_docking')
+# _drd3 = Oracle(name = 'drd3_docking')
 
 
 def dock_drd3(smi):
@@ -203,7 +203,7 @@ if __name__ == '__main__':
 
     with mp.Pool(processes=args.ncpu) as pool:
         scores, mols, trees = fitness(embs=population,
-                                      pool=pool,
+                                      _pool=pool,
                                       obj=args.objective)
     scores     = np.array(scores)
     score_x    = np.argsort(scores)
@@ -228,7 +228,7 @@ if __name__ == '__main__':
         offspring = crossover(parents=population,
                               offspring_size=args.num_offspring,
                               distribution=dist_)
-        offspring = mutation(offspring=offspring,
+        offspring = mutation(offspring_crossover=offspring,
                              num_mut_per_ele=num_mut_per_ele_,
                              mut_probability=mut_probability_)
         new_population = np.unique(np.concatenate([population, offspring], axis=0), axis=0)
