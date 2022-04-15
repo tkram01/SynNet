@@ -14,7 +14,7 @@ from tdc import Oracle
 
 # define the following oracle functions from the TDC
 logp  = Oracle(name = 'LogP')
-# qed   = Oracle(name = 'QED')
+qed   = Oracle(name = 'QED')
 # jnk   = Oracle(name = 'JNK3')
 # gsk   = Oracle(name = 'GSK3B')
 # drd2  = Oracle(name = 'DRD2')
